@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happy Birthday Emmy 💙</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background:linear-gradient(135deg,#cce7ff,#e6f2ff);
+    text-align:center;
+    color:#003366;
+    overflow-x:hidden;
+}
+.container{
+    padding:40px 20px;
+}
+h1{
+    font-size:3em;
+}
+.card{
+    background:white;
+    max-width:600px;
+    margin:20px auto;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+.emoji{
+    font-size:40px;
+}
+button{
+    background:#4da6ff;
+    border:none;
+    padding:12px 20px;
+    border-radius:10px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+}
+button:hover{
+    background:#3399ff;
+}
+footer{
+    margin-top:40px;
+    font-size:14px;
+    color:#555;
+}
+
+/* 🐱 animated cats */
+.cat{
+    position:fixed;
+    bottom:10px;
+    font-size:40px;
+    animation:walk 20s linear infinite;
+}
+.cat2{
+    position:fixed;
+    bottom:60px;
+    font-size:35px;
+    animation:walk 25s linear infinite reverse;
+}
+@keyframes walk{
+    from{ left:-100px;}
+    to{ left:110%;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Happy Birthday Emmy 💙🎂</h1>
+<p class="emoji">🔬 🐱 🌸</p>
+
+<div class="card">
+<h2>To My Amazing Bestie</h2>
+<p>
+Dear Emmy,<br><br>
+Happy Birthday to the prettiest soul 💙<br>
+May your life be full of discoveries, happiness and endless success.<br>
+
+You built with your own effort and your own heart. Watching you grow and chase your dreams inspires me more than you probably realize.
+
+Thank you for being my safe place, my biggest supporter, and the person who makes life brighter just by being in it. I’m so grateful for every memory we share and for the beautiful soul you are.
+
+
+
+</p>
+
+<button onclick="showMessage()">Click for a surprise 💙</button>
+<p id="surprise"></p>
+
+</div>
+
+<footer>
+Made with love for Emmy 💙🐱
+</footer>
+
+</div>
+
+<!-- 🐱 cute moving cats -->
+<div class="cat">🐱</div>
+<div class="cat2">🐈‍⬛</div>
+
+<script>
+function showMessage(){
+document.getElementById("surprise").innerHTML =
+"🎉 You are appreciated more than words can say! Proud of you Emmy  🎉";
+}
+</script>
+
+</body>
+</html>
